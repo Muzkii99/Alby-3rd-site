@@ -97,7 +97,7 @@ function About() {
             <p className="text-blue-600 font-semibold uppercase tracking-wide mb-2">About Us</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Your Trusted Car Rental Partner in Samoa</h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">Alby Rentals is a locally-owned car rental business based in the heart of Samoa. We pride ourselves on providing reliable, well-maintained vehicles at competitive prices for both locals and visitors.</p>
-            <p className="text-gray-600 text-lg leading-relaxed mb-8">Whether you're here for a holiday, business trip, or just need a temporary vehicle, we've got you covered. Simply send us an inquiry, and we'll handle the rest — from confirming availability to arranging airport pickup or delivery.</p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-8">Whether you&apos;re here for a holiday, business trip, or just need a temporary vehicle, we&apos;ve got you covered. Simply send us an inquiry, and we&apos;ll handle the rest — from confirming availability to arranging airport pickup or delivery.</p>
             <div className="grid grid-cols-2 gap-6">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
@@ -109,7 +109,7 @@ function About() {
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <div><p className="font-semibold text-gray-900">Flexible</p><p className="text-sm text-gray-500">Daily & weekly rates</p></div>
+                <div><p className="font-semibold text-gray-900">Flexible</p><p className="text-sm text-gray-500">Daily &amp; weekly rates</p></div>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
@@ -121,7 +121,7 @@ function About() {
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
                 </div>
-                <div><p className="font-semibold text-gray-900">Trusted</p><p className="text-sm text-gray-500">Local & reliable</p></div>
+                <div><p className="font-semibold text-gray-900">Trusted</p><p className="text-sm text-gray-500">Local &amp; reliable</p></div>
               </div>
             </div>
           </div>
@@ -197,12 +197,12 @@ function Fleet() {
 
 function Services() {
   const services = [
-    { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>, title: "Airport Pickup", description: "We'll meet you at Faleolo International Airport with your vehicle ready and waiting for you." },
+    { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>, title: "Airport Pickup", description: "We&apos;ll meet you at Faleolo International Airport with your vehicle ready and waiting for you." },
     { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>, title: "Delivery Service", description: "We deliver and pick up vehicles at your hotel, resort, or any location around Samoa." },
     { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>, title: "Well-Maintained Vehicles", description: "All our cars are regularly serviced and thoroughly cleaned before every rental." },
     { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, title: "Flexible Pricing", description: "Daily, weekly, and monthly rates available. Special discounts for long-term rentals." },
     { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>, title: "Friendly Local Service", description: "As a locally-owned business, we offer personalised service and local knowledge to help you get around." },
-    { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, title: "Easy Booking Process", description: "Simply send us an inquiry, we'll confirm availability, and arrange everything for you hassle-free." },
+    { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, title: "Easy Booking Process", description: "Simply send us an inquiry, we&apos;ll confirm availability, and arrange everything for you hassle-free." },
   ];
 
   return (
@@ -232,7 +232,7 @@ function Testimonials() {
   const testimonials = [
     { name: "Sarah M.", location: "Australia", text: "Alby Rentals made our Samoa holiday so much easier. The car was clean, reliable, and the price was very fair. Highly recommend!", rating: 5 },
     { name: "James T.", location: "New Zealand", text: "Excellent service from start to finish. Airport pickup was seamless and the RAV4 was perfect for exploring the island. Will definitely use again.", rating: 5 },
-    { name: "Leilani F.", location: "Samoa", text: "I've been using Alby Rentals for all my business trips. Always professional, always on time. The best rental service in Samoa.", rating: 5 },
+    { name: "Leilani F.", location: "Samoa", text: "I&apos;ve been using Alby Rentals for all my business trips. Always professional, always on time. The best rental service in Samoa.", rating: 5 },
   ];
 
   return (
@@ -253,7 +253,7 @@ function Testimonials() {
                   </svg>
                 ))}
               </div>
-              <p className="text-white/90 mb-4 leading-relaxed italic">"{testimonial.text}"</p>
+              <p className="text-white/90 mb-4 leading-relaxed italic">&quot;{testimonial.text}&quot;</p>
               <div><p className="text-white font-semibold">{testimonial.name}</p><p className="text-blue-200 text-sm">{testimonial.location}</p></div>
             </div>
           ))}
@@ -286,7 +286,7 @@ function Contact() {
           <p className="text-blue-600 font-semibold uppercase tracking-wide mb-2">Get In Touch</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Inquire About a Rental</h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Send us your details and preferred dates. We'll check availability and get back to you with a booking form to complete your reservation.
+            Send us your details and preferred dates. We&apos;ll check availability and get back to you with a booking form to complete your reservation.
           </p>
         </div>
 
@@ -294,7 +294,7 @@ function Contact() {
           {/* Contact Form */}
           <div className="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
             <h3 className="text-xl font-bold text-gray-900 mb-2">Send us an inquiry</h3>
-            <p className="text-gray-500 text-sm mb-6">Fill in the form below and we'll reply to your email shortly.</p>
+            <p className="text-gray-500 text-sm mb-6">Fill in the form below and we&apos;ll reply to your email shortly.</p>
             
             <form action="https://formsubmit.co/albyrentals@gmail.com" method="POST" className="space-y-4">
               <input type="hidden" name="_subject" value="New Rental Inquiry - Alby Rentals Website" />
@@ -357,7 +357,7 @@ function Contact() {
                     onChange={(e) => setNeedsAirportPickup(e.target.value === "Yes")}
                     className="w-full px-4 py-2 rounded-lg border border-gray-200 bg-white text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition"
                   >
-                    <option value="No">No, I will pick up at Lepea</option>
+                    <option value="No">No, I will pick up in Apia/Lepea</option>
                     <option value="Yes">Yes, please meet me at Faleolo Airport</option>
                   </select>
                 </div>
@@ -378,7 +378,7 @@ function Contact() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Message / Special Requests</label>
-                <textarea name="message" rows={3} className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition resize-none" placeholder="Delivery to a specific resort?"></textarea>
+                <textarea name="message" rows={3} className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition resize-none" placeholder="Any child seats needed? Delivery to a specific resort?"></textarea>
               </div>
 
               <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-semibold text-lg shadow-lg shadow-blue-600/20">
@@ -396,8 +396,8 @@ function Contact() {
               </h4>
               <ol className="space-y-2 text-gray-700 text-sm">
                 <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</span><span>Send us an inquiry using the form or WhatsApp.</span></li>
-                <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</span><span>We'll check availability and reply with a booking form.</span></li>
-                <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">3</span><span>Once confirmed, we'll send our ANZ bank details for a deposit.</span></li>
+                <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</span><span>We&apos;ll check availability and reply with a booking form.</span></li>
+                <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">3</span><span>Once confirmed, we&apos;ll send our ANZ bank details for a deposit.</span></li>
                 <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">4</span><span>Your vehicle will be ready for pick-up or airport delivery!</span></li>
               </ol>
             </div>
@@ -425,7 +425,7 @@ function Contact() {
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                 </div>
-                <div><h4 className="font-bold text-gray-900 mb-1">Email</h4><p className="text-gray-600">albyrentals@gmail.com</p><p className="text-gray-500 text-sm">We'll reply as soon as possible</p></div>
+                <div><h4 className="font-bold text-gray-900 mb-1">Email</h4><p className="text-gray-600">albyrentals@gmail.com</p><p className="text-gray-500 text-sm">We&apos;ll reply as soon as possible</p></div>
               </div>
             </div>
           </div>

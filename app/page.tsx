@@ -277,6 +277,8 @@ function Testimonials() {
 }
 
 function Contact() {
+  const [needsAirportPickup, setNeedsAirportPickup] = useState(false);
+
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -341,7 +343,7 @@ function Contact() {
                 </select>
               </div>
 
-              {/* NEW: Airport Pickup Details */}
+              {/* NEW: Smart Airport Pickup Details */}
               <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 space-y-4">
                 <h4 className="font-semibold text-blue-900 flex items-center gap-2">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>
@@ -349,26 +351,35 @@ function Contact() {
                 </h4>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Do you need airport pickup?</label>
-                  <select name="airport_pickup" className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition bg-white">
+                  <select 
+                    name="airport_pickup" 
+                    value={needsAirportPickup ? "Yes" : "No"}
+                    onChange={(e) => setNeedsAirportPickup(e.target.value === "Yes")}
+                    className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition bg-white"
+                  >
                     <option value="No">No, I will pick up in Apia/Lepea</option>
                     <option value="Yes">Yes, please meet me at Faleolo Airport</option>
                   </select>
                 </div>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Flight Number (if applicable)</label>
-                    <input type="text" name="flight_number" className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" placeholder="e.g., PJ 891" />
+                
+                {/* These fields only appear if they select "Yes" */}
+                {needsAirportPickup && (
+                  <div className="grid sm:grid-cols-2 gap-4 pt-2 border-t border-blue-200">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Flight Number</label>
+                      <input type="text" name="flight_number" className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" placeholder="e.g., PJ 891" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Estimated Arrival Time</label>
+                      <input type="time" name="arrival_time" className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" />
+                    </div>
                   </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Estimated Arrival Time</label>
-                    <input type="time" name="arrival_time" className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" />
-                  </div>
-                </div>
+                )}
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Message / Special Requests</label>
-                <textarea name="message" rows={3} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition resize-none" placeholder="Delivery to a specific resort?"></textarea>
+                <textarea name="message" rows={3} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition resize-none" placeholder="Any child seats needed? Delivery to a specific resort?"></textarea>
               </div>
 
               <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-semibold text-lg shadow-lg shadow-blue-600/20">
@@ -377,7 +388,7 @@ function Contact() {
             </form>
           </div>
 
-          {/* Contact Info (Keep exactly as it was) */}
+          {/* Contact Info */}
           <div className="space-y-6">
             <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
               <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">

@@ -513,7 +513,7 @@ function Footer() {
           <div>
             <h4 className="font-bold text-white mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Lepea, Apia, Samoa</li>
+              <li>Lepea, Samoa</li>
               <li>+685 21271</li>
               <li>+685 7611239 (Mobile)</li>
               <li>albyrentals@gmail.com</li>

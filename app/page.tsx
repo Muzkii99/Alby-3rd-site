@@ -9,7 +9,6 @@ function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <div className="flex items-center gap-2">
             <img src="/Alby LOGO Final.png" alt="Alby Rentals" className="w-14 h-10 object-contain" />
             <div className="brand-wordmark">
@@ -18,7 +17,6 @@ function Navbar() {
             </div>
           </div>
 
-          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             <a href="#home" className="text-gray-700 hover:text-blue-600 transition font-medium">Home</a>
             <a href="#about" className="text-gray-700 hover:text-blue-600 transition font-medium">About</a>
@@ -28,11 +26,7 @@ function Navbar() {
             <a href="#contact" className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition font-medium">Inquire Now</a>
           </div>
 
-          {/* Mobile Toggle */}
-          <button
-            className="md:hidden text-gray-700"
-            onClick={() => setMobileOpen(!mobileOpen)}
-          >
+          <button className="md:hidden text-gray-700" onClick={() => setMobileOpen(!mobileOpen)}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -43,7 +37,6 @@ function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {mobileOpen && (
           <div className="md:hidden pb-4 border-t border-gray-100">
             <div className="flex flex-col gap-3 pt-4">
@@ -65,11 +58,7 @@ function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center">
       <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1590523278191-995cbcda646b?auto=format&fit=crop&w=1920&q=80"
-          alt="Samoa coastline"
-          className="w-full h-full object-cover"
-        />
+        <img src="https://images.unsplash.com/photo-1590523278191-995cbcda646b?auto=format&fit=crop&w=1920&q=80" alt="Samoa coastline" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
       </div>
 
@@ -84,12 +73,8 @@ function Hero() {
             Discover the beauty of Samoa with Alby Rentals. Reliable, affordable car rentals based in Lepea, Apia. From airport pickups to delivery across the island — we make it easy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#fleet" className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-center text-lg shadow-lg shadow-blue-600/30">
-              View Our Fleet
-            </a>
-            <a href="#contact" className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition font-semibold text-center text-lg">
-              Send an Inquiry
-            </a>
+            <a href="#fleet" className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold text-center text-lg shadow-lg shadow-blue-600/30">View Our Fleet</a>
+            <a href="#contact" className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition font-semibold text-center text-lg">Send an Inquiry</a>
           </div>
         </div>
       </div>
@@ -110,81 +95,43 @@ function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-blue-600 font-semibold uppercase tracking-wide mb-2">About Us</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-              Your Trusted Car Rental Partner in Samoa
-            </h2>
-            <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              Alby Rentals is a locally-owned car rental business based in the heart of Samoa. We pride ourselves on providing reliable, well-maintained vehicles at competitive prices for both locals and visitors.
-            </p>
-            <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              Whether you're here for a holiday, business trip, or just need a temporary vehicle, we've got you covered. Simply send us an inquiry, and we'll handle the rest — from confirming availability to arranging airport pickup or delivery.
-            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Your Trusted Car Rental Partner in Samoa</h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">Alby Rentals is a locally-owned car rental business based in the heart of Samoa. We pride ourselves on providing reliable, well-maintained vehicles at competitive prices for both locals and visitors.</p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-8">Whether you're here for a holiday, business trip, or just need a temporary vehicle, we've got you covered. Simply send us an inquiry, and we'll handle the rest — from confirming availability to arranging airport pickup or delivery.</p>
             <div className="grid grid-cols-2 gap-6">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Affordable</p>
-                  <p className="text-sm text-gray-500">Best rates in Samoa</p>
-                </div>
+                <div><p className="font-semibold text-gray-900">Affordable</p><p className="text-sm text-gray-500">Best rates in Samoa</p></div>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Flexible</p>
-                  <p className="text-sm text-gray-500">Daily & weekly rates</p>
-                </div>
+                <div><p className="font-semibold text-gray-900">Flexible</p><p className="text-sm text-gray-500">Daily & weekly rates</p></div>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                  </svg>
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>
                 </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Airport Pickup</p>
-                  <p className="text-sm text-gray-500">We meet you on arrival</p>
-                </div>
+                <div><p className="font-semibold text-gray-900">Airport Pickup</p><p className="text-sm text-gray-500">We meet you on arrival</p></div>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
                 </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Trusted</p>
-                  <p className="text-sm text-gray-500">Local & reliable</p>
-                </div>
+                <div><p className="font-semibold text-gray-900">Trusted</p><p className="text-sm text-gray-500">Local & reliable</p></div>
               </div>
             </div>
           </div>
           <div className="relative">
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white rounded-xl p-6 shadow-sm text-center">
-                  <p className="text-3xl font-bold text-blue-600">30+</p>
-                  <p className="text-gray-600 text-sm mt-1">Years Experience</p>
-                </div>
-                <div className="bg-white rounded-xl p-6 shadow-sm text-center">
-                  <p className="text-3xl font-bold text-blue-600">500+</p>
-                  <p className="text-gray-600 text-sm mt-1">Happy Customers</p>
-                </div>
-                <div className="bg-white rounded-xl p-6 shadow-sm text-center">
-                  <p className="text-3xl font-bold text-blue-600">10+</p>
-                  <p className="text-gray-600 text-sm mt-1">Vehicles Available</p>
-                </div>
-                <div className="bg-white rounded-xl p-6 shadow-sm text-center">
-                  <p className="text-3xl font-bold text-blue-600">24/7</p>
-                  <p className="text-gray-600 text-sm mt-1">Support</p>
-                </div>
+                <div className="bg-white rounded-xl p-6 shadow-sm text-center"><p className="text-3xl font-bold text-blue-600">30+</p><p className="text-gray-600 text-sm mt-1">Years Experience</p></div>
+                <div className="bg-white rounded-xl p-6 shadow-sm text-center"><p className="text-3xl font-bold text-blue-600">500+</p><p className="text-gray-600 text-sm mt-1">Happy Customers</p></div>
+                <div className="bg-white rounded-xl p-6 shadow-sm text-center"><p className="text-3xl font-bold text-blue-600">10+</p><p className="text-gray-600 text-sm mt-1">Vehicles Available</p></div>
+                <div className="bg-white rounded-xl p-6 shadow-sm text-center"><p className="text-3xl font-bold text-blue-600">24/7</p><p className="text-gray-600 text-sm mt-1">Support</p></div>
               </div>
             </div>
           </div>
@@ -196,9 +143,9 @@ function About() {
 
 function Fleet() {
   const cars = [
-    { name: "Toyota Corolla", type: "Sedan", seats: 5, transmission: "Automatic", price: "$65", image: "", description: "Perfect for couples or small families exploring the island." },
+    { name: "Toyota Corolla", type: "Sedan", seats: 5, transmission: "Automatic", price: "$65", image: "🚗", description: "Perfect for couples or small families exploring the island." },
     { name: "Toyota RAV4", type: "SUV", seats: 5, transmission: "Automatic", price: "$95", image: "🚙", description: "Great for families and adventures to remote beaches." },
-    { name: "Hyundai iLoad", type: "Van", seats: 8, transmission: "Automatic", price: "$120", image: "", description: "Ideal for groups and family trips around Samoa." },
+    { name: "Hyundai iLoad", type: "Van", seats: 8, transmission: "Automatic", price: "$120", image: "🚐", description: "Ideal for groups and family trips around Samoa." },
     { name: "Toyota Hilux", type: "Pickup", seats: 5, transmission: "Automatic", price: "$110", image: "🛻", description: "Perfect for rugged terrain and carrying equipment." },
     { name: "Suzuki Swift", type: "Compact", seats: 4, transmission: "Automatic", price: "$50", image: "🚗", description: "Budget-friendly option for solo travelers or couples." },
     { name: "Mitsubishi Pajero", type: "4WD", seats: 7, transmission: "Automatic", price: "$130", image: "🚙", description: "The ultimate vehicle for exploring all of Samoa." },
@@ -210,9 +157,7 @@ function Fleet() {
         <div className="text-center mb-12">
           <p className="text-blue-600 font-semibold uppercase tracking-wide mb-2">Our Fleet</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Choose Your Perfect Ride</h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            From compact cars for zipping around town to rugged 4WDs for island exploration, we have the right vehicle for every need.
-          </p>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">From compact cars for zipping around town to rugged 4WDs for island exploration, we have the right vehicle for every need.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -229,27 +174,17 @@ function Fleet() {
                 <p className="text-gray-500 text-sm mb-4">{car.description}</p>
                 <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
                   <span className="flex items-center gap-1">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
                     {car.seats} Seats
                   </span>
                   <span className="flex items-center gap-1">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                     {car.transmission}
                   </span>
                 </div>
                 <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                  <div>
-                    <span className="text-2xl font-bold text-blue-600">{car.price}</span>
-                    <span className="text-gray-500 text-sm">/day</span>
-                  </div>
-                  <a href="#contact" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition text-sm font-medium">
-                    Inquire
-                  </a>
+                  <div><span className="text-2xl font-bold text-blue-600">{car.price}</span><span className="text-gray-500 text-sm">/day</span></div>
+                  <a href="#contact" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition text-sm font-medium">Inquire</a>
                 </div>
               </div>
             </div>
@@ -282,9 +217,7 @@ function Services() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group p-6 rounded-xl border border-gray-100 hover:border-blue-100 hover:bg-blue-50/50 transition-all">
-              <div className="w-14 h-14 bg-blue-50 group-hover:bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4 transition-colors">
-                {service.icon}
-              </div>
+              <div className="w-14 h-14 bg-blue-50 group-hover:bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4 transition-colors">{service.icon}</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
               <p className="text-gray-600 leading-relaxed">{service.description}</p>
             </div>
@@ -321,24 +254,14 @@ function Testimonials() {
                 ))}
               </div>
               <p className="text-white/90 mb-4 leading-relaxed italic">"{testimonial.text}"</p>
-              <div>
-                <p className="text-white font-semibold">{testimonial.name}</p>
-                <p className="text-blue-200 text-sm">{testimonial.location}</p>
-              </div>
+              <div><p className="text-white font-semibold">{testimonial.name}</p><p className="text-blue-200 text-sm">{testimonial.location}</p></div>
             </div>
           ))}
         </div>
 
-        {/* NEW: Google Review Call-to-Action */}
         <div className="text-center mt-12">
           <p className="text-blue-200 mb-4 text-sm">Happy with our service?</p>
-          <a 
-            href="https://share.google/tfxEN57gKt7gNFs4c" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition transform hover:scale-105"
-          >
-            {/* Google "G" Logo SVG */}
+          <a href="https://share.google/tfxEN57gKt7gNFs4c" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition transform hover:scale-105">
             <svg className="w-5 h-5" viewBox="0 0 24 24">
               <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
               <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -360,18 +283,14 @@ function Contact() {
         <div className="text-center mb-12">
           <p className="text-blue-600 font-semibold uppercase tracking-wide mb-2">Get In Touch</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Inquire About a Rental</h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Send us your details and preferred dates. We'll check availability and get back to you with a booking form to complete your reservation.
-          </p>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">Send us your details and preferred dates. We'll check availability and get back to you with a booking form to complete your reservation.</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <div className="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
             <h3 className="text-xl font-bold text-gray-900 mb-2">Send us an inquiry</h3>
             <p className="text-gray-500 text-sm mb-6">Fill in the form below and we'll reply to your email shortly.</p>
             
-            {/* THIS IS THE MAGIC FORM THAT SENDS TO GMAIL */}
             <form action="https://formsubmit.co/albyrentals@gmail.com" method="POST" className="space-y-4">
               <input type="hidden" name="_subject" value="New Rental Inquiry - Alby Rentals Website" />
               <input type="hidden" name="_captcha" value="false" />
@@ -417,21 +336,16 @@ function Contact() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                <textarea name="message" rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition resize-none" placeholder="Any special requests or questions? (e.g. airport pickup, delivery location, etc.)"></textarea>
+                <textarea name="message" rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition resize-none" placeholder="Any special requests or questions?"></textarea>
               </div>
-              <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-semibold text-lg shadow-lg shadow-blue-600/20">
-                Send Inquiry
-              </button>
+              <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-semibold text-lg shadow-lg shadow-blue-600/20">Send Inquiry</button>
             </form>
           </div>
 
-          {/* Contact Info */}
           <div className="space-y-6">
             <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
               <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
-                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 How Booking Works
               </h4>
               <ol className="space-y-2 text-gray-700 text-sm">
@@ -447,11 +361,7 @@ function Contact() {
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                 </div>
-                <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Location</h4>
-                  <p className="text-gray-600">Lepea, Samoa</p>
-                  <p className="text-gray-500 text-sm">Apia</p>
-                </div>
+                <div><h4 className="font-bold text-gray-900 mb-1">Location</h4><p className="text-gray-600">Lepea, Samoa</p><p className="text-gray-500 text-sm">Apia</p></div>
               </div>
             </div>
 
@@ -460,11 +370,7 @@ function Contact() {
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                 </div>
-                <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Phone</h4>
-                  <p className="text-gray-600">+685 21271</p>
-                  <p className="text-gray-600">+685 7611239 (Mobile)</p>
-                </div>
+                <div><h4 className="font-bold text-gray-900 mb-1">Phone</h4><p className="text-gray-600">+685 21271</p><p className="text-gray-600">+685 7611239 (Mobile)</p></div>
               </div>
             </div>
 
@@ -473,11 +379,7 @@ function Contact() {
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                 </div>
-                <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Email</h4>
-                  <p className="text-gray-600">albyrentals@gmail.com</p>
-                  <p className="text-gray-500 text-sm">We'll reply as soon as possible</p>
-                </div>
+                <div><h4 className="font-bold text-gray-900 mb-1">Email</h4><p className="text-gray-600">albyrentals@gmail.com</p><p className="text-gray-500 text-sm">We'll reply as soon as possible</p></div>
               </div>
             </div>
 
@@ -486,11 +388,7 @@ function Contact() {
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Operating Hours</h4>
-                  <p className="text-gray-600">Monday – Saturday: 7:00 AM – 6:00 PM</p>
-                  <p className="text-gray-600">Sunday: 8:00 AM – 2:00 PM</p>
-                </div>
+                <div><h4 className="font-bold text-gray-900 mb-1">Operating Hours</h4><p className="text-gray-600">Monday – Saturday: 7:00 AM – 6:00 PM</p><p className="text-gray-600">Sunday: 8:00 AM – 2:00 PM</p></div>
               </div>
             </div>
           </div>
@@ -508,14 +406,9 @@ function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <img src="/Alby LOGO Final white.png" alt="Alby Rentals" className="w-14 h-10 object-contain bg-gray-900" />
-              <div>
-                <span className="text-xl font-bold text-white">Alby</span>
-                <span className="text-xl font-light text-blue-400"> Rentals</span>
-              </div>
+              <div><span className="text-xl font-bold text-white">Alby</span><span className="text-xl font-light text-blue-400"> Rentals</span></div>
             </div>
-            <p className="text-gray-400 leading-relaxed max-w-md">
-              Your trusted car rental partner in Samoa. We provide reliable, affordable vehicles for locals and visitors to explore the beautiful islands of Samoa.
-            </p>
+            <p className="text-gray-400 leading-relaxed max-w-md">Your trusted car rental partner in Samoa. We provide reliable, affordable vehicles for locals and visitors to explore the beautiful islands of Samoa.</p>
           </div>
 
           <div>
@@ -561,7 +454,6 @@ export default function App() {
       <Contact />
       <Footer />
 
-      {/* NEW: Floating WhatsApp Button */}
       <a 
         href="https://wa.me/6857611239?text=Hi%20Alby%20Rentals,%20I%20would%20like%20to%20inquire%20about%20renting%20a%20car."
         target="_blank"

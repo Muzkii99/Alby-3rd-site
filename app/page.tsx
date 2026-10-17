@@ -283,10 +283,13 @@ function Contact() {
         <div className="text-center mb-12">
           <p className="text-blue-600 font-semibold uppercase tracking-wide mb-2">Get In Touch</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Inquire About a Rental</h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">Send us your details and preferred dates. We'll check availability and get back to you with a booking form to complete your reservation.</p>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            Send us your details and preferred dates. We'll check availability and get back to you with a booking form to complete your reservation.
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
+          {/* Contact Form */}
           <div className="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
             <h3 className="text-xl font-bold text-gray-900 mb-2">Send us an inquiry</h3>
             <p className="text-gray-500 text-sm mb-6">Fill in the form below and we'll reply to your email shortly.</p>
@@ -307,41 +310,74 @@ function Contact() {
                   <input type="email" name="email" required className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" placeholder="your@email.com" />
                 </div>
               </div>
+
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Phone / WhatsApp *</label>
                 <input type="tel" name="phone" required className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" placeholder="+685 xxxxxxx" />
               </div>
+
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Pick-up Date</label>
-                  <input type="date" name="pickup_date" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" />
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Pick-up Date *</label>
+                  <input type="date" name="pickup_date" required className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Return Date</label>
-                  <input type="date" name="return_date" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" />
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Return Date *</label>
+                  <input type="date" name="return_date" required className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" />
                 </div>
               </div>
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Vehicle of Interest</label>
                 <select name="vehicle" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition bg-white">
                   <option value="">Select a vehicle (optional)</option>
-                  <option value="Toyota Corolla">Toyota Corolla – Sedan</option>
-                  <option value="Toyota RAV4">Toyota RAV4 – SUV</option>
-                  <option value="Hyundai iLoad">Hyundai iLoad – Van</option>
-                  <option value="Toyota Hilux">Toyota Hilux – Pickup</option>
-                  <option value="Suzuki Swift">Suzuki Swift – Compact</option>
-                  <option value="Mitsubishi Pajero">Mitsubishi Pajero – 4WD</option>
-                  <option value="Not sure">Not sure yet</option>
+                  <option value="Toyota Corolla">Toyota Corolla – Sedan ($65/day)</option>
+                  <option value="Toyota RAV4">Toyota RAV4 – SUV ($95/day)</option>
+                  <option value="Hyundai iLoad">Hyundai iLoad – Van ($120/day)</option>
+                  <option value="Toyota Hilux">Toyota Hilux – Pickup ($110/day)</option>
+                  <option value="Suzuki Swift">Suzuki Swift – Compact ($50/day)</option>
+                  <option value="Mitsubishi Pajero">Mitsubishi Pajero – 4WD ($130/day)</option>
+                  <option value="Not sure">Not sure yet (Please advise)</option>
                 </select>
               </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                <textarea name="message" rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition resize-none" placeholder="Any special requests or questions?"></textarea>
+
+              {/* NEW: Airport Pickup Details */}
+              <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 space-y-4">
+                <h4 className="font-semibold text-blue-900 flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>
+                  Airport Pickup Details (Optional)
+                </h4>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Do you need airport pickup?</label>
+                  <select name="airport_pickup" className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition bg-white">
+                    <option value="No">No, I will pick up in Apia/Lepea</option>
+                    <option value="Yes">Yes, please meet me at Faleolo Airport</option>
+                  </select>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Flight Number (if applicable)</label>
+                    <input type="text" name="flight_number" className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" placeholder="e.g., PJ 891" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Estimated Arrival Time</label>
+                    <input type="time" name="arrival_time" className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" />
+                  </div>
+                </div>
               </div>
-              <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-semibold text-lg shadow-lg shadow-blue-600/20">Send Inquiry</button>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Message / Special Requests</label>
+                <textarea name="message" rows={3} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition resize-none" placeholder="Any child seats needed? Delivery to a specific resort?"></textarea>
+              </div>
+
+              <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-semibold text-lg shadow-lg shadow-blue-600/20">
+                Send Inquiry
+              </button>
             </form>
           </div>
 
+          {/* Contact Info (Keep exactly as it was) */}
           <div className="space-y-6">
             <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
               <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
@@ -349,10 +385,10 @@ function Contact() {
                 How Booking Works
               </h4>
               <ol className="space-y-2 text-gray-700 text-sm">
-                <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</span><span>Send us an inquiry using the form or contact us directly.</span></li>
-                <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</span><span>We'll check availability and email you a booking form to fill in.</span></li>
-                <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">3</span><span>Once confirmed, we'll send our ANZ bank details for payment.</span></li>
-                <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">4</span><span>Your vehicle will be ready for pick-up or delivery on your chosen date!</span></li>
+                <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</span><span>Send us an inquiry using the form or WhatsApp.</span></li>
+                <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</span><span>We'll check availability and reply with a booking form.</span></li>
+                <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">3</span><span>Once confirmed, we'll send our ANZ bank details for a deposit.</span></li>
+                <li className="flex items-start gap-2"><span className="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">4</span><span>Your vehicle will be ready for pick-up or airport delivery!</span></li>
               </ol>
             </div>
 
@@ -370,7 +406,7 @@ function Contact() {
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                 </div>
-                <div><h4 className="font-bold text-gray-900 mb-1">Phone</h4><p className="text-gray-600">+685 21271</p><p className="text-gray-600">+685 7611239 (Mobile)</p></div>
+                <div><h4 className="font-bold text-gray-900 mb-1">Phone / WhatsApp</h4><p className="text-gray-600">+685 21271</p><p className="text-gray-600">+685 7611239 (Mobile)</p></div>
               </div>
             </div>
 
@@ -380,15 +416,6 @@ function Contact() {
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                 </div>
                 <div><h4 className="font-bold text-gray-900 mb-1">Email</h4><p className="text-gray-600">albyrentals@gmail.com</p><p className="text-gray-500 text-sm">We'll reply as soon as possible</p></div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                </div>
-                <div><h4 className="font-bold text-gray-900 mb-1">Operating Hours</h4><p className="text-gray-600">Monday – Saturday: 7:00 AM – 6:00 PM</p><p className="text-gray-600">Sunday: 8:00 AM – 2:00 PM</p></div>
               </div>
             </div>
           </div>

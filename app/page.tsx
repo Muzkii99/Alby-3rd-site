@@ -11,7 +11,7 @@ function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="Alby Rentals" className="w-14 h-10 object-contain" />
+            <img src="/logo.jpg" alt="Alby Rentals" className="w-14 h-10 object-contain" />
             <div className="brand-wordmark">
               <span className="text-xl font-bold text-gray-900">Alby</span>
               <span className="text-xl font-light text-blue-600"> rentals</span>

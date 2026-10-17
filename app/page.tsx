@@ -368,7 +368,7 @@ function Contact() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Message / Special Requests</label>
-                <textarea name="message" rows={3} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition resize-none" placeholder="Any child seats needed? Delivery to a specific resort?"></textarea>
+                <textarea name="message" rows={3} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition resize-none" placeholder="Delivery to a specific resort?"></textarea>
               </div>
 
               <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-semibold text-lg shadow-lg shadow-blue-600/20">

@@ -488,7 +488,7 @@ function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <img src="/logo.png" alt="Alby Rentals" className="w-10 h-10 object-contain bg-white rounded-lg p-1" />
+              <img src="/lAlby LOGO Final.png" alt="Alby Rentals" className="w-10 h-10 object-contain bg-white rounded-lg p-1" />
               <div>
                 <span className="text-xl font-bold text-white">Alby</span>
                 <span className="text-xl font-light text-blue-400"> Rentals</span>

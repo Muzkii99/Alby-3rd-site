@@ -14,7 +14,7 @@ function Navbar() {
             <img src="/Alby LOGO Final.png" alt="Alby Rentals" className="w-14 h-10 object-contain" />
             <div className="brand-wordmark">
               <span className="text-xl font-bold text-gray-900">Alby</span>
-              <span className="text-xl font-light text-blue-600"> rentals</span>
+              <span className="text-xl font-light text-blue-600"> Rentals</span>
             </div>
           </div>
 
@@ -488,7 +488,7 @@ function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               {/* FIXED TYPO HERE: Removed the accidental 'l' at the start of the filename */}
-              <img src="/Alby LOGO Final white.png" alt="Alby Rentals" className="w-10 h-10 object-contain bg-gray-900 rounded-lg p-1" />
+              <img src="/Alby LOGO Final white.png" alt="Alby Rentals" className="w-14 h-10 object-contain bg-gray-900" />
               <div>
                 <span className="text-xl font-bold text-white">Alby</span>
                 <span className="text-xl font-light text-blue-400"> Rentals</span>

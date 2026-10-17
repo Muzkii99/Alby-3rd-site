@@ -402,32 +402,55 @@ function Contact() {
               </ol>
             </div>
 
-            <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+            {/* CLICKABLE LOCATION CARD */}
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=Alby+Rentals+Lepea+Samoa" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all group block"
+            >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-blue-50 group-hover:bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                 </div>
-                <div><h4 className="font-bold text-gray-900 mb-1">Location</h4><p className="text-gray-600">Lepea, Samoa</p><p className="text-gray-500 text-sm">Apia</p></div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">Location</h4>
+                  <p className="text-gray-600 group-hover:text-blue-600 transition-colors">Lepea, Samoa</p>
+                  <p className="text-blue-500 text-sm font-medium mt-1">Tap to open in Google Maps ↗</p>
+                </div>
               </div>
-            </div>
+            </a>
 
+            {/* CLICKABLE PHONE CARD */}
             <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                 </div>
-                <div><h4 className="font-bold text-gray-900 mb-1">Phone / WhatsApp</h4><p className="text-gray-600">+685 21271</p><p className="text-gray-600">+685 7611239 (Mobile)</p></div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1">Phone / WhatsApp</h4>
+                  <a href="tel:+68521271" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">+685 21271</a>
+                  <a href="tel:+6857611239" className="block text-gray-600 hover:text-blue-600 transition-colors font-medium">+685 7611239 (Mobile)</a>
+                </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+            {/* CLICKABLE EMAIL CARD */}
+            <a 
+              href="mailto:albyrentals@gmail.com"
+              className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all group block"
+            >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-blue-50 group-hover:bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                 </div>
-                <div><h4 className="font-bold text-gray-900 mb-1">Email</h4><p className="text-gray-600">albyrentals@gmail.com</p><p className="text-gray-500 text-sm">We&apos;ll reply as soon as possible</p></div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">Email</h4>
+                  <p className="text-gray-600 group-hover:text-blue-600 transition-colors">albyrentals@gmail.com</p>
+                  <p className="text-blue-500 text-sm font-medium mt-1">Tap to send an email ↗</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

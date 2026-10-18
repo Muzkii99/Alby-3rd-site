@@ -300,7 +300,7 @@ function Contact() {
               <input type="hidden" name="_subject" value="New Rental Inquiry - Alby Rentals Website" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_next" value="https://YOUR-NETLIFY-URL.netlify.app/thank-you" />
+              <input type="hidden" name="_next" value="https://albyrentals.netlify.app/thank-you" />
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>

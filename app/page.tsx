@@ -318,16 +318,18 @@ function Contact() {
                 <input type="tel" name="phone" required className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" placeholder="+685 xxxxxxx" />
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Pick-up Date *</label>
-                  <input type="date" name="pickup_date" required className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Return Date *</label>
-                  <input type="date" name="return_date" required className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" />
-                </div>
-              </div>
+                 <div className="grid sm:grid-cols-2 gap-4">
+     <div>
+       <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Pick-up Date *</label>
+       <input type="date" name="pickup_date" required className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" />
+       <p className="text-xs text-gray-500 mt-1">Format: DD/MM/YYYY</p>
+     </div>
+     <div>
+       <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Return Date *</label>
+       <input type="date" name="return_date" required className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition" />
+       <p className="text-xs text-gray-500 mt-1">Format: DD/MM/YYYY</p>
+     </div>
+   </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Vehicle of Interest</label>
